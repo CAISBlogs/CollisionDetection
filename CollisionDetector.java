@@ -1,7 +1,5 @@
 package com.tut.tutorial;
 
-import com.tut.prerequesits.Entity;
-
 /**
  * 
  * This static class is a wrapper for all collision detectors and acts as
@@ -45,6 +43,12 @@ public class CollisionDetector {
 	public static boolean boxCollide(Entity primary, Entity secondary){
 		return BoundingBoxDetector.doesCollide(primary, secondary);
 	}
+	
+
+	public static boolean hyperplaneCollide(Entity primary, Entity secondary){
+		return HyperPlaneDetector.doesCollide(primary, secondary);
+	}
+	
 
 
 }
